@@ -1,9 +1,9 @@
-var express = require("express");
+const express = require("express");
 
-var router = express.Router();
+const router = express.Router();
 
 // Import the model (burger.js) to use its database functions.
-var burger = require("../models/burger.js");
+const burger = require("../models/burger.js");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
@@ -32,8 +32,8 @@ router.post("/api/burger", function(req, res) {
     burger.create(
       req.body.burger_name
     , function(result) {
-      // Send back the ID of the new quote
-      console.log("Testing to assure the post call is working" + result);
+      // NReturn to new quote ID
+      console.log("testing Post" + result);
       res.redirect("/");
     });
   });

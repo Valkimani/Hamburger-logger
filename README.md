@@ -9,24 +9,18 @@ In this assignment, to create a burger logger with MySQL, Node, Express, Handleb
 
 * Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
 
-* Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured.
+* Whenever a user submits a burger's name, the app will display the burger on the left side of the page -- waiting to be devoured.
 
 * Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
 
-* Your app will store every burger in a database, whether devoured or not.
+* The app will store every burger in a database, whether devoured or not.
 
 * [Check out this video of the app for a run-through of how it works](https://youtu.be/msvdn95x9OM).
 
 
-### Submission on BCS
-
-* **This assignment must be deployed.** * Please submit both the deployed Heroku link to your homework AND the link to the Github Repository!
-
-## Instructions
-
 #### App Setup
 
-1. Create a GitHub repo called `burger` and clone it to your computer.
+1. Create a GitHub repo called `burger` and clone it to the computer.
 
 2. Make a package.json file by running `npm init` from the command line.
 
@@ -43,7 +37,7 @@ In this assignment, to create a burger logger with MySQL, Node, Express, Handleb
 
 #### DB Setup
 
-1. Inside your `burger` directory, create a folder named `db`.
+1. Inside the `burger` directory, create a folder named `db`.
 
 2. In the `db` folder, create a file named `schema.sql`. Write SQL queries this file that do the following:
 
@@ -60,11 +54,11 @@ In this assignment, to create a burger logger with MySQL, Node, Express, Handleb
 
 5. Now you're going to run these SQL files.
 
-   * Make sure you're in the `db` folder of your app.
+   * Make sure you're in the `db` folder of the app.
 
    * Start MySQL command line tool and login: `mysql -u root -p`.
 
-   * With the `mysql>` command line tool running, enter the command `source schema.sql`. This will run your schema file and all of the queries in it -- in other words, you'll be creating your database.
+   * With the `mysql>` command line tool running, enter the command `source schema.sql`. This will run the schema file and all of the queries in it -- in other words, you'll be creating the database.
 
    * Now insert the entries you defined in `seeds.sql` by running the file: `source seeds.sql`.
 
@@ -72,7 +66,7 @@ In this assignment, to create a burger logger with MySQL, Node, Express, Handleb
 
 #### Config Setup
 
-1. Inside your `burger` directory, create a folder named `config`.
+1. Inside the `burger` directory, create a folder named `config`.
 
 2. Create a `connection.js` file inside `config` directory.
 
@@ -84,7 +78,7 @@ In this assignment, to create a burger logger with MySQL, Node, Express, Handleb
 
    * Import (require) `connection.js` into `orm.js`
 
-   * In the `orm.js` file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
+   * In the `orm.js` file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in the database.
 
      * `selectAll()`
      * `insertOne()`
@@ -94,7 +88,7 @@ In this assignment, to create a burger logger with MySQL, Node, Express, Handleb
 
 #### Model setup
 
-* Inside your `burger` directory, create a folder named `models`.
+* Inside the `burger` directory, create a folder named `models`.
 
   * In `models`, make a `burger.js` file.
 
@@ -106,7 +100,7 @@ In this assignment, to create a burger logger with MySQL, Node, Express, Handleb
 
 #### Controller setup
 
-1. Inside your `burger` directory, create a folder named `controllers`.
+1. Inside the `burger` directory, create a folder named `controllers`.
 
 2. In `controllers`, create the `burgers_controller.js` file.
 
@@ -115,11 +109,11 @@ In this assignment, to create a burger logger with MySQL, Node, Express, Handleb
    * Express
    * `burger.js`
 
-4. Create the `router` for the app, and export the `router` at the end of your file.
+4. Create the `router` for the app, and export the `router` at the end of the file.
 
 #### View setup
 
-1. Inside your `burger` directory, create a folder named `views`.
+1. Inside the `burger` directory, create a folder named `views`.
 
    * Create the `index.handlebars` file inside `views` directory.
 
@@ -133,48 +127,16 @@ In this assignment, to create a burger logger with MySQL, Node, Express, Handleb
 
      * Create a button in `index.handlebars` that will submit the user input into the database.
 
-#### Directory structure
 
-All the recommended files and directories from the steps above should look like the following structure:
+## LINKS
 
-```
-.
-├── config
-│   ├── connection.js
-│   └── orm.js
-│ 
-├── controllers
-│   └── burgers_controller.js
-│
-├── db
-│   ├── schema.sql
-│   └── seeds.sql
-│
-├── models
-│   └── burger.js
-│ 
-├── node_modules
-│ 
-├── package.json
-│
-├── public
-│   └── assets
-│       ├── css
-│       │   └── burger_style.css
-│       └── img
-│           └── burger.png
-│   
-│
-├── server.js
-│
-└── views
-    ├── index.handlebars
-    └── layouts
-        └── main.handlebars
-```
+ [Github page](https://github.com/Valkimani/Hamburger-logger)
+
+ [Heroku](https://git.heroku.com/arcane-hollows-51816.git)
+
 ## CREDITS
 
-Please see [Heroku’s Account Verification Information](https://devcenter.heroku.com/articles/account-verification) for more details.
+[Heroku’s Account Verification Information](https://devcenter.heroku.com/articles/account-verification) for more details.
 
 - - -
 
