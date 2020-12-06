@@ -17,4 +17,6 @@ li {
   .form-group {
     margin-bottom: 5px;
   }
-  
+  h1,h2,image,button {
+      text-align: center;
+  }
