@@ -1,3 +1,7 @@
+body{
+  text-align: center;
+  background-color:rgb(240, 176, 59);
+}
 li {
     padding: 5px;
     margin: 5px;
@@ -17,6 +21,4 @@ li {
   .form-group {
     margin-bottom: 5px;
   }
-  h1,h2,image,button {
-      text-align: center;
-  }
+  
