@@ -1,6 +1,7 @@
 // Import the ORM to create functions that will interact with the database.
 const orm = require("../config/orm.js");
-
+burger_name =  ("name_burger")
+  
 const burger = {
   all: function(cb) {
     orm.all("burgers", function(res) {
@@ -12,7 +13,8 @@ const burger = {
     orm.create("burgers", [
       "burger_name", "devoured"
     ], [
-      name, false
+      // burger_name, false
+      vals
     ], cb)
   },
   update: function(objColVals, condition, cb) {
