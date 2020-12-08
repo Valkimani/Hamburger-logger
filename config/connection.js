@@ -4,13 +4,21 @@ var mysql = require("mysql");
 var connection;
 if(process.env.JAWSDB_URL){
   connection=mysql.createConnection(process.env.JAWSDB_URL);
+// }else {
+  // connection =mysql.createConnection({
+  //   host: "ixnzh1cxch6rtdrx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  // port: 3306,
+  // user: "btd1ahi5ji04q5jy",
+  // password: "Vuw4nfaam16spe9k9",
+  // database: "uybor0utrhlwzsyy"
+  // });
 }else {
   connection =mysql.createConnection({
-    host: "ixnzh1cxch6rtdrx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    host: "localhost",
   port: 3306,
-  user: "btd1ahi5ji04q5jy",
-  password: "Vuw4nfaam16spe9k9",
-  database: "uybor0utrhlwzsyy"
+  user: "root",
+  password: "Val2121!",
+  database: "burgers_db"
   });
 }
 // Make connection.
